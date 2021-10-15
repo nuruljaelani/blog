@@ -52,5 +52,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  googleFonts: {
+    families: {
+      NotoSans: true,
+      Lato: [300, 400, 500, 600, 700, 800, 900]
+    }
   }
 }
