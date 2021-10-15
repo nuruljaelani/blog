@@ -1,11 +1,17 @@
 <template>
-  <nav class="bg-white">
-    <div class="mx-auto px-4 md:px-10 lg:px-20 xl:28 flex">
-      <p class="text-lg font-bold">
-        Go Blog
+  <div class="bg-white shadow border w-full py-2 md:py-3">
+    <div class="px-10 md:px-20 lg:px-28 flex items-center justify-between">
+      <p class="text-lg font-semibold">
+        Blog
       </p>
+      <div class="flex space-x-4 md:space-x-8 lg:space-x-12">
+        <p>Home</p>
+        <p>Article</p>
+        <p>Tutorial</p>
+        <p>About</p>
+      </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>
