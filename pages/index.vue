@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow border w-full py-2 md:py-3">
+  <div class="bg-white w-full py-2 md:py-3">
     <div class="px-10 md:px-20 lg:px-28 flex items-center justify-between">
       <p class="text-lg font-semibold">
         Blog
