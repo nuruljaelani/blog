@@ -9,7 +9,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
 
@@ -55,6 +56,7 @@ export default {
   },
 
   googleFonts: {
+    download: true,
     families: {
       NotoSans: true,
       Lato: [300, 400, 500, 600, 700, 800, 900]

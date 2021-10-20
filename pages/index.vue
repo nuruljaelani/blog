@@ -42,15 +42,17 @@
       </p>
       <div class="flex space-x-4 md:space-x-8">
         <div class="w-1/2 flex flex-col space-y-2">
-          <img src="~/assets/images/pankaj-patel-Fi-GJaLRGKc-unsplash.jpg" alt="article images">
-          <div class="flex flex-col space-y-2">
-            <p class="font-semibold text-lg md:text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, delectus.
-            </p>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde suscipit error cum doloribus est! Ipsam corrupti corporis ipsa consequuntur.
-            </p>
-          </div>
+          <NuxtLink to="/detail">
+            <img src="~/assets/images/pankaj-patel-Fi-GJaLRGKc-unsplash.jpg" alt="article images">
+            <div class="flex flex-col space-y-2">
+              <p class="font-semibold text-lg md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, delectus.
+              </p>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis porro placeat molestiae, a vel voluptas possimus voluptatum minus nam fuga ipsum labore officiis laborum, facilis ex quidem esse, quos nisi nemo velit. Ducimus dolorum harum temporibus! Accusamus facilis ullam blanditiis, obcaecati cum perspiciatis! Ipsum ex ratione repudiandae et autem accusantium ducimus pariatur tempore tenetur repellendus.
+              </p>
+            </div>
+          </NuxtLink>
         </div>
         <div class="w-1/2 flex flex-col space-y-4">
           <div class="flex space-x-4">
@@ -95,6 +97,19 @@
         </div>
       </div>
     </main>
+    <footer class="bg-gray-100">
+      <div class="flex justify-between max-w-6xl py-4 md:py-8 lg:py-12 mx-auto">
+        <p class="text-sm text-gray-500">
+          &copy;&nbsp;2021 goblog.com
+        </p>
+        <div class="flex space-x-3">
+          <img src="~/assets/logo/github-icon.svg" alt="" class="w-6">
+          <img src="~/assets/logo/instagram-icon.svg" alt="" class="w-6">
+          <img src="~/assets/logo/facebook.svg" alt="" class="w-6">
+          <img src="~/assets/logo/youtube-icon.svg" alt="" class="w-6">
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
