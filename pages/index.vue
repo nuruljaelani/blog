@@ -1,18 +1,6 @@
 <template>
   <div>
-    <nav class="bg-gray-100">
-      <div class="flex items-center justify-between mx-auto max-w-6xl py-2 lg:py-3">
-        <p class="text-lg md:text-xl lg:text-2xl font-bold text-red-500 tracking-tighter">
-          Go Blog
-        </p>
-        <div class="flex space-x-4 md:space-x-8 lg:space-x-12 font-medium">
-          <p>Home</p>
-          <p>Article</p>
-          <p>Tutorial</p>
-          <p>About</p>
-        </div>
-      </div>
-    </nav>
+    <Nav />
     <header class="bg-gray-100">
       <div class="flex space-x-4 md:space-x-8 py-4 md:py-10 lg:py-20 justify-center items-center mx-auto max-w-6xl">
         <div class="w-3/5 flex flex-col space-y-4 md:space-y-8">
@@ -114,5 +102,10 @@
 </template>
 
 <script>
-export default {}
+import Nav from '~/components/Nav'
+export default {
+  components: {
+    Nav
+  }
+}
 </script>

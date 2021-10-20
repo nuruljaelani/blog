@@ -30,7 +30,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,6 +61,15 @@ export default {
     families: {
       NotoSans: true,
       Lato: [300, 400, 500, 600, 700, 800, 900]
+    }
+  },
+
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: true,
+      brand: true
     }
   }
 }
