@@ -69,7 +69,8 @@ export default {
     suffix: true,
     icons: {
       solid: true,
-      brand: true
+      brand: true,
+      outline: true
     }
   }
 }
