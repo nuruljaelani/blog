@@ -38,8 +38,8 @@
             Insert Article
           </p>
           <div class="bg-white shadow-md rounded-md">
-            <div class="flex flex-col p-4">
-              <form>
+            <div class="p-4">
+              <form class="flex flex-col space-y-2">
                 <div class="flex flex-col space-y-2">
                   <label class="text-gray-600 font-medium">
                     Title
@@ -50,18 +50,21 @@
                   <label class="text-gray-600 font-medium">
                     Body
                   </label>
-                  <div>
-                    <client-only>
-                      <quillEditor
-                        ref="editor"
-                        v-model="content"
-                        :options="editorOption"
-                        @blur="onEditorBlur($event)"
-                        @focus="onEditorFocus($event)"
-                        @ready="onEditorReady($event)"
-                      />
-                    </client-only>
-                  </div>
+                  <textarea class="border appearance-none focus:outline-none rounded-md p-2" />
+                </div>
+                <div class="flex flex-col space-y-2">
+                  <label class="text-gray-600 font-medium">
+                    Images
+                  </label>
+                  <input type="file" class="border appearance-none focus:outline-none rounded-md p-2">
+                </div>
+                <div class="flex text-white font-medium text-sm space-x-4">
+                  <button type="button" class="bg-green-500 rounded-md p-2 shadow">
+                    Submit
+                  </button>
+                  <button type="button" class="bg-red-500 rounded-md p-2 shadow">
+                    Cancel
+                  </button>
                 </div>
               </form>
             </div>
@@ -73,47 +76,7 @@
 </template>
 
 <script>
-import { quillEditor } from 'vue-quill-editor/dist/ssr'
 export default {
-  name: 'QuillEditor',
-  directives: {
-    quill: quillEditor
-  },
-  data () {
-    return {
-      content: '<p>I am Example</p>',
-      editorOption: {
-        // Some Quill options...
-        theme: 'snow',
-        modules: {
-          toolbar: [
-            ['bold', 'italic', 'underline', 'strike'],
-            ['blockquote', 'code-block']
-          ]
-        }
-      }
-    }
-  },
-  mounted () {
-    // eslint-disable-next-line no-console
-    console.log('App inited, the Quill instance object is:', this.$refs.editor.quill)
-    setTimeout(() => {
-      this.content = 'I was changed!'
-    }, 3000)
-  },
-  methods: {
-    onEditorBlur (editor) {
-      // eslint-disable-next-line no-console
-      console.log('editor blur!', editor)
-    },
-    onEditorFocus (editor) {
-      // eslint-disable-next-line no-console
-      console.log('editor focus!', editor)
-    },
-    onEditorReady (editor) {
-      // eslint-disable-next-line no-console
-      console.log('editor ready!', editor)
-    }
-  }
 }
+
 </script>

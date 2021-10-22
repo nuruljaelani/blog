@@ -9,15 +9,12 @@
           <div class="flex flex-col font-medium my-8 px-4">
             <div class="flex flex-col space-y-4">
               <div class="flex items-center space-x-2 bg-gray-200 rounded-md py-2 px-2">
-                <fa-icon icon="home" />
                 <p>Dashboard</p>
               </div>
               <div class="flex items-center space-x-2 py-2 px-2">
-                <fa-icon icon="file" />
                 <p>Articles</p>
               </div>
               <div class="flex items-center space-x-2 py-2 px-2">
-                <fa-icon icon="user" />
                 <p>Users</p>
               </div>
             </div>
