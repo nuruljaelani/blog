@@ -8,10 +8,21 @@
         </p>
       </NuxtLink>
       <div class="flex space-x-4 md:space-x-8 lg:space-x-12 font-medium">
-        <p>Home</p>
-        <p>Article</p>
-        <p>Tutorial</p>
-        <p>About</p>
+        <NuxtLink to="/">
+          <p class="text-gray-600 hover:text-gray-700">
+            Home
+          </p>
+        </NuxtLink>
+        <NuxtLink to="/">
+          <p class="text-gray-600 hover:text-gray-700">
+            Artikel
+          </p>
+        </NuxtLink>
+        <NuxtLink to="/">
+          <p class="text-gray-600 hover:text-gray-700">
+            Tutorial
+          </p>
+        </NuxtLink>
         <NuxtLink to="/login">
           <button type="button" class="bg-red-500 rounded-md text-sm font-medium text-white px-4 py-2">
             Login
