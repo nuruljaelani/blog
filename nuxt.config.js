@@ -13,6 +13,7 @@ export default {
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
+  target: 'server',
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
