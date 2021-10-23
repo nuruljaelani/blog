@@ -14,11 +14,11 @@
             </div>
           </div>
           <p class="text-2xl text-blue-600 font-bold">
-            Article
+            Category
           </p>
-          <NuxtLink to="/admin/article/insert">
+          <NuxtLink to="/admin/category/insert">
             <button type="button" class="bg-orange-500 rounded-md p-2 text-white text-sm font-medium w-32 shadow hover:bg-orange-600">
-              Add Article
+              Add Category
             </button>
           </NuxtLink>
           <div class="bg-white shadow-md rounded-md">
@@ -93,6 +93,6 @@
 <script>
 import Sidebar from '../../../components/Sidebar.vue'
 export default {
-  name: 'Article',
+  name: 'Category',
   components: Sidebar
 }

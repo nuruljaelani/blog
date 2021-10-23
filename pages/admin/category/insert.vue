@@ -14,34 +14,22 @@
             </div>
           </div>
           <p class="text-2xl text-blue-600 font-bold">
-            Insert Article
+            Insert Category
           </p>
           <div class="bg-white shadow-md rounded-md">
             <div class="p-4">
               <form class="flex flex-col space-y-2">
                 <div class="flex flex-col space-y-2">
                   <label class="text-gray-600 font-medium">
-                    Title
+                    Name
                   </label>
                   <input type="text" class="border appearance-none focus:outline-none rounded-md p-2">
-                </div>
-                <div class="flex flex-col space-y-2">
-                  <label class="text-gray-600 font-medium">
-                    Body
-                  </label>
-                  <textarea class="border appearance-none focus:outline-none rounded-md p-2" />
-                </div>
-                <div class="flex flex-col space-y-2">
-                  <label class="text-gray-600 font-medium">
-                    Images
-                  </label>
-                  <input type="file" class="border appearance-none focus:outline-none rounded-md p-2">
                 </div>
                 <div class="flex text-white font-medium text-sm space-x-4">
                   <button type="button" class="bg-green-500 rounded-md p-2 shadow">
                     Submit
                   </button>
-                  <NuxtLink to="/admin/article">
+                  <NuxtLink to="/admin/category">
                     <button type="button" class="bg-red-500 rounded-md p-2 shadow">
                       Cancel
                     </button>
