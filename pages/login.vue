@@ -3,10 +3,10 @@
     <Nav />
     <main class="max-w-6xl mx-auto my-10 md:my-16 lg:my-20" style="min-height:70vh">
       <div class="flex items-center">
-        <div class="w-2/3">
+        <div class="w-3/5">
           <img src="~/assets/9SCENE.svg" class="w-full">
         </div>
-        <div class="w-1/3">
+        <div class="w-2/5">
           <div class="bg-white rounded-md shadow-md border p-4 md:p-6 lg:p-8 flex flex-col space-y-4">
             <form class="flex flex-col space-y-4">
               <div class="flex items-center">
