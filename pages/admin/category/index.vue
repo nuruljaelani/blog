@@ -42,32 +42,13 @@
                   </td>
                 </tr>
               </thead>
-              <tbody>
+              <tbody v-for="( item, index ) in post" :key="index">
                 <tr>
                   <td class="p-4">
-                    1
+                    {{ index + 1 }}
                   </td>
                   <td class="p-4">
-                    Lorem ipsum dolor sit amet.
-                  </td>
-                  <td class="p-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla?
-                  </td>
-                  <td class="p-4">
-                    Javascript
-                  </td>
-                  <td class="p-4">
-                    <button type="button" class="bg-blue-500 rounded text-xs p-1 text-white">
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-4">
-                    2
-                  </td>
-                  <td class="p-4">
-                    Lorem ipsum dolor sit amet.
+                    {{ item.title }}
                   </td>
                   <td class="p-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla?
@@ -92,7 +73,17 @@
 
 <script>
 import Sidebar from '../../../components/Sidebar.vue'
+
 export default {
   name: 'Category',
-  components: Sidebar
+  components: Sidebar,
+  async asyncData ({ $axios }) {
+    const post = await $axios.$get('https://jsonplaceholder.typicode.com/posts')
+    return { post }
+  },
+  head: {
+    title: 'Data Category'
+  }
 }
+
+</script>

@@ -96,6 +96,9 @@ export default {
   components: {
     Nav,
     Footer
+  },
+  head: {
+    title: 'Home'
   }
 }
 </script>

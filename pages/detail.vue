@@ -111,6 +111,9 @@ import Nav from '~/components/Nav'
 export default {
   components: {
     Nav
+  },
+  head: {
+    title: 'Detail'
   }
 }
 </script>

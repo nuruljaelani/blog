@@ -6,8 +6,8 @@
       </p>
       <div class="flex flex-col font-medium my-8 px-4">
         <div class="flex flex-col space-y-4">
-          <NuxtLink to="/admin">
-            <div class="flex items-center space-x-2 bg-gray-200 rounded-md py-2 px-2">
+          <NuxtLink to="/admin" exact>
+            <div class="flex items-center space-x-2 rounded-md py-2 px-2">
               <p>Dashboard</p>
             </div>
           </NuxtLink>
@@ -29,10 +29,15 @@
 
 <script>
 export default {
-
 }
 </script>
 
-<style>
+<style scoped>
+.nuxt-link-active {
+  background-color: #f87171
+}
 
+.nuxt-link-exact-active {
+  color: white;
+}
 </style>
