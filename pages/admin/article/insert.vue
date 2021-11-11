@@ -18,31 +18,20 @@
           </p>
           <div class="bg-white shadow-md rounded-md">
             <div class="p-4">
-              <form class="flex flex-col space-y-2">
+              <form class="flex flex-col space-y-6">
                 <div class="flex flex-col space-y-2">
                   <label class="text-gray-600 font-medium">
                     Title
                   </label>
                   <input type="text" class="border appearance-none focus:outline-none rounded-md p-2">
                 </div>
-                <div class="flex flex-col space-y-2">
-                  <label class="text-gray-600 font-medium">
-                    Body
-                  </label>
-                  <textarea class="border appearance-none focus:outline-none rounded-md p-2" />
-                </div>
-                <div class="flex flex-col space-y-2">
-                  <label class="text-gray-600 font-medium">
-                    Images
-                  </label>
-                  <input type="file" class="border appearance-none focus:outline-none rounded-md p-2">
-                </div>
+                <vue-editor v-model="articleContent" />
                 <div class="flex text-white font-medium text-sm space-x-4">
-                  <button type="button" class="bg-green-500 rounded-md p-2 shadow">
+                  <button type="button" class="bg-green-500 rounded-lg p-2 shadow font-semibold">
                     Submit
                   </button>
                   <NuxtLink to="/admin/article">
-                    <button type="button" class="bg-red-500 rounded-md p-2 shadow">
+                    <button type="button" class="bg-red-500 rounded-lg p-2 shadow font-semibold">
                       Cancel
                     </button>
                   </NuxtLink>
@@ -58,8 +47,16 @@
 
 <script>
 import Sidebar from '../../../components/Sidebar.vue'
+
 export default {
-  components: Sidebar,
+  components: {
+    Sidebar
+  },
+  data () {
+    return {
+      articleContent: null
+    }
+  },
   head: {
     title: 'Insert Article'
   }
